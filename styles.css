@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Work+Sans:wght@400&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.content header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content header h1 {
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px gray;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s all ease;
+}
+
+.content header h1:hover {
+  background-color: #000;
+  transform: scale(0.98);
+}
+
+.content .search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.content .search-container input {
+  padding: 15px;
+  border-radius: 20px;
+  width: 600px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: none;
+  font-size: 24px;
+  color: #fff;
+  transition: 0.5s all ease;
+  box-shadow: inset 0px 0px 4px #000;
+}
+
+.content .search-container input::placeholder {
+  color: #fff;
+}
+
+.content .search-container input:focus {
+  background-color: #000;
+  font-size: 26px;
+}
+
+.content .search-container button {
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.content .search-container button:active {
+  transform: scale(0.98);
+}
+
+.content .bookmarks {
+  width: 80%;
+  align-self: center;
+}
+
+.content .bookmarks h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px gray;
+}
+
+.content .bookmarks .links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.content .bookmarks .tab {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 300px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: #fff;
+  transition: 0.5s all ease;
+}
+
+.content .bookmarks .tab:hover {
+  background-color: #000;
+  outline: 1px solid #fff;
+}
+
+.content .bookmarks .tab .icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: #fff;
+  color: #000;
+}
+
+.content .bookmarks .tab .icon img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content .bookmarks .tab .details .title {
+  font-size: 24px;
+}
+
+.content .bookmarks .tab .details .url {
+  font-size: 12px;
+  color: gray;
+}
